@@ -1,0 +1,29 @@
+
+.catalog--title {
+    padding-top: calc(48px + 2rem);
+    text-align: center;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.catalog--card {
+    width: 256px;
+    padding: 1rem;
+    border: 1px solid black;
+    display: grid;
+    gap: 1rem;
+}
+
+.catalog--card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.catalog--card a {
+    color: black;
+}
