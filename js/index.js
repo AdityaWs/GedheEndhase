@@ -96,9 +96,41 @@ function displayItem() {
     if(Object.keys(items).length !== 0) {
         element.innerHTML += `
             <div class="menu--cart--checkout">
-                <a href="product_checkout.html"><button>CHECKOUT <i class="bi bi-arrow-right"></i></button></a>
+                <a href="product_checkout.html"><button><i class="bi bi-arrow-right"></i> CHECKOUT</button></a>
             </div>`;
     } else {
+        element.innerHTML += `<p style="text-align: center; font-size: 0.875rem; padding: 2rem 0;">Uh oh there nothing here</p>`;
+    }
+
+    displayItemOnPage();
+
+}
+
+function displayItemOnPage() {
+
+    if(document.getElementById("cart-items") == null) {
+        return;
+    }
+
+    let element = document.getElementById("cart-items");
+    element.innerHTML = "";
+
+    for (let [key, value] of Object.entries(items)) {
+        element.innerHTML += `
+            <div>
+                <button class="menu--cart--delete-item" onclick="removeItem(${key}); parentElement.remove()"><i class="bi bi-x-lg"></i></button>
+                <img src="./images/RenderJacket${value}03.png">
+                <div class="menu--cart--info-item">
+                    <p>${value} Coffee Leather Jacket</p>
+                    <small>IDR 2.000.000</small>
+                </div>
+            </div>`;
+    }
+
+    if(Object.keys(items).length !== 0) {
+        document.getElementById("cart-checkout").style.display = "block";
+    } else {
+        document.getElementById("cart-checkout").style.display = "none";
         element.innerHTML += `<p style="text-align: center; font-size: 0.875rem; padding: 2rem 0;">Uh oh there nothing here</p>`;
     }
 

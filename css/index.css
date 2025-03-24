@@ -320,7 +320,7 @@ canvas {
     width: calc(100% - 2rem);
 }
 
-.menu--cart--checkout button {
+.menu--cart--checkout button, #cart-checkout button {
     width: 100%;
     padding: 1rem;
     border: 1px solid #584333;
@@ -329,9 +329,10 @@ canvas {
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s;
+    max-width: 500px;
 }
 
-.menu--cart--checkout button:hover {
+.menu--cart--checkout button:hover, #cart-checkout button:hover {
     background: #584333;
     color: white;
 }
