@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>GEDHE ENDHASE</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar--left">
+            <a id="action-menu"><i class="bi bi-list"></i> <span>Menu</span></a>
+            <a id="action-search"><i class="bi bi-search"></i> <span>Search</span></a>
+        </div>
+        <div class="navbar--right">
+            <a id="action-contact"><i class="bi bi-telephone-fill"></i> <span>Contact</span></a>
+            <a id="action-cart"><i class="bi bi-cart"></i> <span>Your Cart</span></a>
+        </div>
+    </nav>
+
+    <aside class="menu">
+        <button class="menu--close" id="action-menu-close"><i class="bi bi-x-lg"></i></button>
+        <div class="menu--list">
+            <a href="./index.html">Back To Homepage</a>
+            <i class="bi bi-house"></i>
+            <a href="./catalog.html">Our Catalog</a>
+            <i class="bi bi-bag"></i>
+            <a href="./news.html">Our News</a>
+            <i class="bi bi-newspaper"></i>
+            <a href="./cart.html">Your Cart</a>
+            <i class="bi bi-cart"></i>
+            <a href="./orders.html">Your Orders</a>
+            <i class="bi bi-file-check-fill"></i>
+        </div>
+        <div class="menu--info">
+            <i class="bi bi-globe-americas"></i> English
+        </div>
+    </aside>
+
+    <aside class="menu--search">
+        <div>
+            <button class="menu--close" id="action-search-close"><i class="bi bi-x-lg"></i></button>
+            <p>What are you looking for?</p>
+            <div class="menu--search--input">
+                <input type="text">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+    </aside>
+
+    <aside class="menu--contact">
+        <div>
+            <button class="menu--close" id="action-contact-close"><i class="bi bi-x-lg"></i></button>
+            <p>Wanna contact us?</p>
+            <br>
+            <label for="email">Your Email Address</label>
+            <input type="email" name="email" id="email">
+            <label for="message">What's your message</label>
+            <textarea name="message" id="message"></textarea>
+            <button>SEND</button>
+        </div>
+    </aside>
+
+    <div class="menu--cart">
+        <button class="menu--close" id="action-cart-close"><i class="bi bi-x-lg"></i></button>
+        <p>Your Cart</p>
+        <div id="cart">
+        </div>
+    </div>
+
+    <div class="menu-blur"></div>
+
+    <!-- PAGE CONTENT -->
+
+    <div class="contact">
+        <div>
+            <p>Wanna contact us?</p>
+            <br>
+            <label for="email">Your Email Address</label>
+            <input type="email" name="email" id="email">
+            <label for="message">What's your message</label>
+            <textarea name="message" id="message"></textarea>
+            <button>SEND</button>
+        </div>
+    </div>
+
+    <!-- END OF PAGE CONTENT -->
+
+    <div class="footer">
+        <p class="footer--title">GEDHE ENDHASE</p>
+        <div class="footer--content">
+            <div>
+                <p>Need Help?</p>
+                <a href="./contact_us.html">Contact Us</a>
+                <a href="./faqs.html">FAQs</a>
+                <a href="./news.html">News</a>
+            </div>
+            <div>
+                <p>Orders and Shipping</p>
+                <a href="./cart.html">My Cart</a>
+                <a href="./orders.html">My Orders</a>
+                <a href="./catalog.html">Our Catalog</a>
+            </div>
+            <div>
+                <p>Our Policies</p>
+                <a href="./policy_privacy.html">Privacy Policy</a>
+                <a href="./policy_products.html">Products Protection Policy</a>
+                <a href="./policy_shipping.html">Shipping Policy</a>
+            </div>
+            <div>
+                <p>Our Brand</p>
+                <a href="./about_us.html">About Us</a>
+                <a href="./about_our_vision.html">Our Vision</a>
+                <a href="./about_our_mission.html">Our Mission</a>
+            </div>
+        </div>
+        <div class="footer--links">
+            <div class="footer--social">
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+            </div>
+            <div class="footer--payments"></div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2025 Gedhe Endhase - All Rights Reserved</p>
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

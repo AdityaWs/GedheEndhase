@@ -1,0 +1,37 @@
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: calc(48px + 4rem);
+    padding-bottom: 4rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.collapsible {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #584333;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-family: "Libre Baskerville";
+    font-weight: bold;
+    color: #584333;
+}
+
+.collapsible--content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    line-height: 2;
+}
+
+.collapsible--content li {
+    margin-left: 20px;
+}
